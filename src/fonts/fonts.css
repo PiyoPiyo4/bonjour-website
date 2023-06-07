@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "HFBronte";
+    src:  
+    local("HFBronte"),
+    url("./HFBronte.ttf") format("truetype");
+    /* font-weight: bolder; */
+}
+@font-face {
+    font-family: "clorin";
+    src:
+    local('clorin'), 
+    url('./Clorin-ZV6qB.otf') format('opentype');
+}
