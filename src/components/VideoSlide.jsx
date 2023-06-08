@@ -10,6 +10,7 @@ import Navbar from './NavBar';
 
 const VideoSlide = () => {
   const flickityRef = useRef(null);
+  // const [isDragging, setIsDragging] = useState(false);
 
   const flickityOptions = {
     wrapAround: true,
@@ -18,15 +19,25 @@ const VideoSlide = () => {
     autoPlay: 6000,
     pauseAutoPlayOnHover: false,
   }
+  // const handleClick = (id) => {
+  //   const url = `https://youtu.be/${id}`; // Replace with your desired URL
+  //   // console.log(flickityRef.current.isPointerDown)
+  //   console.log(flickityRef.current.isDragging)
+  //   // if(!flickityRef.current.isDragging) {
+  //   //   console.log(flickityRef.current.selectedIndex)
+  //   //   // window.open(url, '_blank');
+  //   // }
+  // };
+  // console.log(flickityRef.current.isPointerDown)
 
-  const handleClick = (id) => {
-    const url = `https://youtu.be/${id}`; // Replace with your desired URL
-    if(!flickityRef.current.isDragging) {
-      window.open(url, '_blank');
-      console.log(flickityRef.current)
-    }
-  };
-  
+  // flickityRef.on('staticClick', (e, p ,index) => {
+  //   if(!flickityRef.current.isDragging) {
+  //     const url = `https://example.com/${index.dataset.id}`;
+  //     window.open(url, '_blank');
+  //     // console.log(flickityRef.current)
+  //   }
+  // })
+
   return (
     <div 
       className={styles.maindiv}
@@ -45,7 +56,6 @@ const VideoSlide = () => {
             backgroundImage: `url("https://i.ytimg.com/vi/RBnvCgOg0js/maxresdefault.jpg")`,
           }} 
           className={styles.carouselCell}
-          onClick={() => handleClick('RBnvCgOg0js')}
           >
           <div className={styles.videoContainer}>
             <VideoPlayer videoId='RBnvCgOg0js' />
@@ -56,7 +66,6 @@ const VideoSlide = () => {
             backgroundImage: `url("https://i.ytimg.com/vi/wJnh407njNw/maxresdefault.jpg")`,
           }} 
           className= {styles.carouselCell}
-          onClick={() => handleClick('wJnh407njNw')}
           >
           <div className={styles.videoContainer}>
             <VideoPlayer videoId='wJnh407njNw' className= {styles.carouselCell} />
@@ -67,7 +76,6 @@ const VideoSlide = () => {
             backgroundImage: `url("https://i.ytimg.com/vi/5x97V6i_Fd0/maxresdefault.jpg")`,
           }} 
           className= {styles.carouselCell}
-          onClick={() => handleClick('5x97V6i_Fd0')}
           >
           <div className={styles.videoContainer}>
             <VideoPlayer videoId='5x97V6i_Fd0' className= {styles.carouselCell} />
