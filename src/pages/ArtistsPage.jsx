@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from '../components/NavBar';
 import pic from '../assets/pic1.jpg'
 import pic2 from '../assets/pic2.jpg'
+import bgVid from '../assets/YODMG.mp4'
 import { SocialIcon } from 'react-social-icons';
 import '../fonts/fonts.css';
 import './styles/ArtistsPageCSS.css'
@@ -11,9 +12,12 @@ const AristsPage = () => {
 
   return (<>
     <Navbar color="black" bgColor="white"/>
+    <div className='vidBg'>
+      <video src={bgVid} autoPlay loop muted/>
+    </div>
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' , marginTop: '50px'}}>
-      <div style={{ textAlign: 'center' }}>
-        <h1 style={{ fontFamily: 'HFBronte', fontWeight: '700' }}>YODMG</h1>
+      <div style={{ textAlign: 'center', position: 'absolute' }}>
+        <h1 style={{ fontFamily: 'HFBronte', fontWeight: '700', color: 'white' }}>YODMG</h1>
         <div className='container'>
           <img
             src={pic}
@@ -35,8 +39,8 @@ const AristsPage = () => {
         {/* <h1>ABOUT YODMG</h1> */}
       </div>
       <footer style={{ position: 'absolute', bottom: 0, left: 5, width: '95%', backgroundColor: 'transparent', color: 'black', fontFamily: 'HFBronte', overflow: 'hidden' }}>
-      <p>&copy; BONJOUR ENTERTAIMENT </p>
-    </footer>
+        <p>&copy; BONJOUR ENTERTAIMENT </p>
+      </footer>
     </div>
   </>)
 }
