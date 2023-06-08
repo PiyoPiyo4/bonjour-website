@@ -13,7 +13,9 @@ const AristsPage = () => {
   return (<>
     <Navbar color="black" bgColor="white"/>
     <div className='vidBg'>
-      <video src={bgVid} autoPlay loop muted playsinline/>
+      <video autoPlay loop muted playsinline> 
+        <source src={bgVid} type="video/mp4"/>
+      </video>
     </div>
     {/* <div className='vids'></div> */}
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' , marginTop: '50px'}}>
