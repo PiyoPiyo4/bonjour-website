@@ -29,8 +29,8 @@ function Navbar(props) {
           <img src={logo} style={{ height: '40px'}} alt='LogoBonjour' />
         </Link>
         <SocialIcon url="https://www.instagram.com/bonjour.ent/" fgColor={props.color} bgColor="transparent" target="_blank" rel="noopener noreferrer"/>
-        <Button component={Link} to="/Artists" color="primary"  style={{ fontFamily: 'HFBronte', color: props.color, fontWeight: 'bold', fontSize: '20px' }}>Artists</Button>
-        <Button component={Link} to="/about" color="primary" style={{ fontFamily: 'HFBronte', color: props.color, fontWeight: 'bold', fontSize: '20px' }}>About</Button>
+        <Button component={Link} to="/YODMG" color="primary"  style={{ fontFamily: 'HFBronte', color: props.color, fontWeight: 'bold', fontSize: '20px' }}>Artists</Button>
+        {/* <Button component={Link} to="/about" color="primary" style={{ fontFamily: 'HFBronte', color: props.color, fontWeight: 'bold', fontSize: '20px' }}>About</Button> */}
         {/* <Button component={Link} to="/contact" color="primary" style={{ fontFamily: 'HFBronte', color: props.color, fontWeight: 'bold' }}>Contact</Button> */}
       </Toolbar>
   </TransparentAppBar>

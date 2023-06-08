@@ -1,8 +1,8 @@
 import React from 'react';
 // import Navbar from '../components/Navbar';
 import Navbar from '../components/NavBar';
-import pic from '../assets/DSC08115-final2.jpg'
-import pic2 from '../assets/DSC08254-final3.jpg'
+import pic from '../assets/pic1.jpg'
+import pic2 from '../assets/pic2.jpg'
 import { SocialIcon } from 'react-social-icons';
 import '../fonts/fonts.css';
 import './styles/ArtistsPageCSS.css'
@@ -35,7 +35,7 @@ const AristsPage = () => {
         {/* <h1>ABOUT YODMG</h1> */}
       </div>
       <footer style={{ position: 'absolute', bottom: 0, left: 5, width: '95%', backgroundColor: 'transparent', color: 'black', fontFamily: 'HFBronte', overflow: 'hidden' }}>
-      <p>This is the transparent and absolutely positioned footer.</p>
+      <p>&copy; BONJOUR ENTERTAIMENT </p>
     </footer>
     </div>
   </>)

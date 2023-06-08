@@ -10,7 +10,7 @@ const HomePage = () => {
     <VideoSlide/>
     {/* <h1> Bonjour </h1> */}
     <footer style={{ position: 'absolute', bottom: 0, left: 5, width: '95%', backgroundColor: 'transparent', color: 'white', fontFamily: 'HFBronte' }}>
-      <p>This is the transparent and absolutely positioned footer.</p>
+      <p>&copy; BONJOUR ENTERTAIMENT </p>
     </footer>
   </div>
   </>)
