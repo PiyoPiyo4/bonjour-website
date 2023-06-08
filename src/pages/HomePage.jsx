@@ -1,7 +1,6 @@
 import React from 'react';
 // import Navbar from '../components/Navbar';
 import VideoSlide from '../components/VideoSlide';
-import styles from './styles/MainPageCSS.module.css'
 import '../fonts/fonts.css';
 
 const HomePage = () => {

@@ -1,13 +1,12 @@
-import {React, useEffect, useRef, useState} from 'react';
+import {React, useRef} from 'react';
 import styles from './styles/VideoSlideCSS.module.css'
 import Flickity from 'react-flickity-component'
 import VideoPlayer from './VideoPlayer';
-import { Button } from '@mui/material';
+// import { Button } from '@mui/material';
 // import Navbar from './Navbar.jsx';
 import Navbar from './NavBar';
 
-import IconButton from '@mui/material/IconButton';
-import { SvgIcon } from '@mui/material';
+// import { SvgIcon } from '@mui/material';
 
 const VideoSlide = () => {
   const flickityRef = useRef(null);
@@ -21,21 +20,21 @@ const VideoSlide = () => {
   }
 
 
-  const nextSlide = () => {
-    // console.log(flickityRef.current.selectedIndex)
-    if (flickityRef.current) {
-      flickityRef.current.next();
-    } else {
-      console.log('Flickity ref is not assigned yet.');
-    }
-  };
+  // const nextSlide = () => {
+  //   // console.log(flickityRef.current.selectedIndex)
+  //   if (flickityRef.current) {
+  //     flickityRef.current.next();
+  //   } else {
+  //     console.log('Flickity ref is not assigned yet.');
+  //   }
+  // };
 
-  const CustomArrowIcon = (props) => (
-    <SvgIcon {...props}>
-      <path d="M0 0h24v24H0z" fill="none" />
-      <path d="M7 10l5 5 5-5z" />
-    </SvgIcon>
-  )
+  // const CustomArrowIcon = (props) => (
+  //   <SvgIcon {...props}>
+  //     <path d="M0 0h24v24H0z" fill="none" />
+  //     <path d="M7 10l5 5 5-5z" />
+  //   </SvgIcon>
+  // )
 
   return (
     <div 
