@@ -13,8 +13,9 @@ const AristsPage = () => {
   return (<>
     <Navbar color="black" bgColor="white"/>
     <div className='vidBg'>
-      <video src={bgVid} autoPlay loop muted/>
+      <video src={bgVid} autoPlay loop muted playsinline/>
     </div>
+    {/* <div className='vids'></div> */}
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' , marginTop: '50px'}}>
       <div style={{ textAlign: 'center', position: 'absolute' }}>
         <h1 style={{ fontFamily: 'HFBronte', fontWeight: '700', color: 'white' }}>YODMG</h1>
