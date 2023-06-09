@@ -52,7 +52,7 @@ video{
 /* Now Streaming */
 .now-streaming {
   text-align: center;
-  margin: 20px;
+  /* margin: 20px; */
 }
 
 .streaming-heading {
@@ -100,4 +100,11 @@ video{
 
 .streaming-icon {
   margin-right: 8px;
+}
+
+/*Mobilee*/
+@media(max-width: 768px) {
+  .streaming-link{
+    width: 85%;
+  }
 }

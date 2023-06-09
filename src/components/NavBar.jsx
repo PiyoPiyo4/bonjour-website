@@ -25,7 +25,7 @@ function Navbar(props) {
   // const classes = useStyles(props);
 
   return (  
-    <TransparentAppBar position="fixed" >
+    <TransparentAppBar position="absolute" >
       <Toolbar>
         {/* <Link to ='/' style={{ flexGrow: 1 }} > */}
         <div style={{ flexGrow: 1 }} >
