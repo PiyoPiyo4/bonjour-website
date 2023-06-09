@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from '../components/NavBar';
 import pic from '../assets/pic1.jpg'
 import pic2 from '../assets/pic2.jpg'
-import bgPic from '../assets/bgBonjour.jpeg'
+// import bgPic from '../assets/bgBonjour.jpeg'
 // import bgVid from '../assets/YODMG.mp4'
 import { SocialIcon } from 'react-social-icons';
 import { FaSpotify, FaApple, FaYoutube } from 'react-icons/fa';
