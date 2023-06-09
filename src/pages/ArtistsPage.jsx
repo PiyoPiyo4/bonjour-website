@@ -13,7 +13,7 @@ const AristsPage = () => {
   return (<>
     <Navbar color="black" bgColor="white"/>
     {/* <div className='vidBg'> */}
-    <video autoPlay loop muted playsinline className='vidBg'> 
+    <video className='vidBg' autoPlay loop muted playsinline webkit-playsinline> 
       <source src={bgVid} type="video/mp4"/>
     </video>
     {/* </div> */}
