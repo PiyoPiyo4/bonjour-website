@@ -2,7 +2,7 @@ import React from 'react';
 import { AppBar, Toolbar, Button, styled } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 // import { makeStyles } from '@mui/styles';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { SocialIcon } from 'react-social-icons';
 import logo from '../assets/Logo.png'
 import '../fonts/fonts.css';
