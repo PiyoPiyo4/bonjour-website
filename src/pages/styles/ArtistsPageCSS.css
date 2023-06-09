@@ -1,3 +1,10 @@
+/*body to put background*/
+body {
+  background-image: url("../../assets/bgBonjour.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
 .container {
     width: 300px;
     height: 300px;
@@ -30,10 +37,55 @@ video{
   object-fit: cover;
 }
 
-.vidBg {
-  position: absolute;
-  top: 0;
-  left: 0;
+/* Now Streaming */
+.now-streaming {
+  text-align: center;
+  margin: 20px;
+}
+
+.streaming-heading {
+  font-size: 24px;
+  color: #333;
+}
+
+.streaming-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.streaming-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  background-color: #1db954;
   width: 100%;
-  height: 100%;
+}
+
+.streaming-link.spotify {
+  background-color: #1db954;
+}
+
+.streaming-link.apple-music {
+  background-color: #ff3b30;
+}
+
+.streaming-link.youtube-music {
+  background-color: #ff0000;
+}
+
+.streaming-link:hover {
+  background-color: #333;
+}
+
+.streaming-icon {
+  margin-right: 8px;
 }
