@@ -1,0 +1,11 @@
+/* main div*/
+.main-div {
+  min-height: calc(100vh - 68px);
+}
+
+/* footer */
+.footer--pin {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}

@@ -13,6 +13,7 @@ import './styles/ArtistsPageCSS.css'
 const AristsPage = () => {
 
   return (<>
+  <div className='main-div'>
     <Navbar color="black" bgColor="white"/>
     {/* <div className='vidBg'> */}
     {/* <video className='vidBg' autoPlay loop muted playsinline webkit-playsinline> 
@@ -87,20 +88,12 @@ const AristsPage = () => {
         {/* <h1>ABOUT YODMG</h1> */}
       </div>
     </div>
-    <footer style={{  position: 'fixed',
-      bottom: 0,
-      left: 0,
-      width: '100%',
-      backgroundColor: 'transparent',
-      color: 'black',
-      fontFamily: 'HFBronte',
-      overflow: 'hidden',
-      textAlign: 'center',
-      padding: '10px 0',
-      fontSize: '14px',
-      zIndex: 999,}}>
-      <p>&copy; BONJOUR ENTERTAIMENT 2019</p>
-    </footer>
+    </div>
+    <div >
+      <footer className='footer--pin'>
+        &copy; BONJOUR ENTERTAIMENT 2019
+      </footer>
+    </div>
   </>)
 }
 

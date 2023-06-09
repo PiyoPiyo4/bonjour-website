@@ -5,6 +5,18 @@ body {
   background-position: center;
 }
 
+/* main div*/
+.main-div {
+  min-height: calc(100vh - 68px);
+}
+
+/* footer */
+.footer--pin {
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
 .container {
     width: 300px;
     height: 300px;
