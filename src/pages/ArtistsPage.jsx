@@ -49,7 +49,7 @@ const AristsPage = () => {
             <ul className="streaming-list">
               <li>
                 <a
-                  href="https://open.spotify.com/track/spotify-track-id"
+                  href="https://prf.hn/click/camref:1101ljvYv/pubref:albumuuid%3DAFCE6363-0934-485A-868B2574A503A1FF/destination:https://open.spotify.com/track/2tOM1Rb1vYkKuk7QDkDQNi?si=Of33edkgTG-P2gAoLZzAyQ"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="streaming-link spotify"
@@ -60,7 +60,7 @@ const AristsPage = () => {
               </li>
               <li>
                 <a
-                  href="https://music.apple.com/us/album/album-id"
+                  href="https://music.apple.com/au/album/showdown-feat-garry-armando/1686889102?i=1686889103"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="streaming-link apple-music"
@@ -71,7 +71,7 @@ const AristsPage = () => {
               </li>
               <li>
                 <a
-                  href="https://music.youtube.com/watch?v=youtube-video-id"
+                  href="https://youtu.be/KCOOqs3_zzY"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="streaming-link youtube-music"
@@ -86,10 +86,21 @@ const AristsPage = () => {
         {/* <h2>Latest Release: SHOWDOWN</h2> */}
         {/* <h1>ABOUT YODMG</h1> */}
       </div>
-      <footer style={{ position: 'absolute', bottom: 0, left: 5, width: '95%', backgroundColor: 'transparent', color: 'black', fontFamily: 'HFBronte', overflow: 'hidden' }}>
-        <p>&copy; BONJOUR ENTERTAIMENT 2019</p>
-      </footer>
     </div>
+    <footer style={{  position: 'fixed',
+      bottom: 0,
+      left: 0,
+      width: '100%',
+      backgroundColor: 'transparent',
+      color: 'black',
+      fontFamily: 'HFBronte',
+      overflow: 'hidden',
+      textAlign: 'center',
+      padding: '10px 0',
+      fontSize: '14px',
+      zIndex: 999,}}>
+      <p>&copy; BONJOUR ENTERTAIMENT 2019</p>
+    </footer>
   </>)
 }
 
