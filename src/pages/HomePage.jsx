@@ -32,7 +32,7 @@ const HomePage = () => {
         textAlign: 'center',
       }
     }}>
-      <p>&copy; BONJOUR ENTERTAIMENT 2019</p>
+      <p>&copy; BONJOUR ENTERTAINMENT 2019</p>
     </footer>
   </div>
   </>)

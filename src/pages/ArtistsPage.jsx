@@ -91,7 +91,7 @@ const AristsPage = () => {
     </div>
     <div >
       <footer className='footer--pin'>
-        &copy; BONJOUR ENTERTAIMENT 2019
+        &copy; BONJOUR ENTERTAINMENT 2019
       </footer>
     </div>
   </>)
