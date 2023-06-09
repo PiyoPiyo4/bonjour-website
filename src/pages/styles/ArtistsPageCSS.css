@@ -108,3 +108,21 @@ video{
     width: 85%;
   }
 }
+
+@media (max-height: 800px) {
+  .main-div {
+    min-height: calc(100vh + 68px);
+  }
+}
+ 
+@media (orientation: landscape) {
+  .footer--pin{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+  }
+  .main-div {
+    min-height: 100vh;
+  }
+}
