@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from '../components/NavBar';
 import pic from '../assets/pic1.jpg'
 import pic2 from '../assets/pic2.jpg'
-import bgVid from '../assets/YODMG.mp4'
+// import bgVid from '../assets/YODMG.mp4'
 import { SocialIcon } from 'react-social-icons';
 import '../fonts/fonts.css';
 import './styles/ArtistsPageCSS.css'
@@ -13,9 +13,9 @@ const AristsPage = () => {
   return (<>
     <Navbar color="black" bgColor="white"/>
     {/* <div className='vidBg'> */}
-    <video className='vidBg' autoPlay loop muted playsinline webkit-playsinline> 
+    {/* <video className='vidBg' autoPlay loop muted playsinline webkit-playsinline> 
       <source src={bgVid} type="video/mp4"/>
-    </video>
+    </video> */}
     {/* </div> */}
     {/* <div className='vids'></div> */}
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' , marginTop: '50px'}}>
