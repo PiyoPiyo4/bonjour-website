@@ -111,12 +111,18 @@ video{
   }
 }
 
-@media (max-height: 800px) {
+@media (max-height: 1000px) {
   .main-div {
-    min-height: calc(100vh + 68px);
+    min-height: calc(100vh + 150px);
   }
 }
- 
+
+@media (max-height: 750px) {
+  .main-div {
+    min-height: calc(100vh + 250px);
+  }
+}
+
 @media (orientation: landscape) {
   .footer--pin{
     position: fixed;
