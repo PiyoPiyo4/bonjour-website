@@ -109,6 +109,9 @@ video{
   .streaming-link{
     width: 85%;
   }
+  .MV{
+    width: 90%;
+  }
 }
 
 @media (max-height: 1000px) {
