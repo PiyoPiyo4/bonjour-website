@@ -46,7 +46,8 @@ const AristsPage = () => {
         </div>
         <div style={{ fontFamily: 'HFBronte' }}>
           <div className="now-streaming">
-            <h2 className="streaming-heading">Now Streaming - SHOWDOWN</h2>
+            <h2 className="streaming-heading">Music Video out now! - SHOWDOWN</h2>
+            <iframe width="100%" height='200vh' src="https://www.youtube.com/embed/12zWZsSzo2E?autoplay=1" title="YouTube video player"></iframe>
             <ul className="streaming-list">
               <li>
                 <a

@@ -10,7 +10,7 @@ const VideoPlayer = ({videoId}) => {
     player.playVideo();
     setTimeout(() => {
       setDelayIframe(true);
-    }, 7000);
+    }, 10000);
   };
 
   const onPlayerStateChange = (event) => {

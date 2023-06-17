@@ -51,6 +51,16 @@ const VideoSlide = () => {
       disableImagesLoaded={false} // default false
       reloadOnUpdate // default false
       >
+        <div
+          style={{ 
+            backgroundImage: `url("https://i.ytimg.com/vi/12zWZsSzo2E/maxresdefault.jpg")`,
+          }} 
+          className= {styles.carouselCell}
+          >
+          <div className={styles.videoContainer}>
+            <VideoPlayer videoId='12zWZsSzo2E' className= {styles.carouselCell} />
+          </div>
+        </div>
         <div 
           style={{ 
             backgroundImage: `url("https://i.ytimg.com/vi/RBnvCgOg0js/maxresdefault.jpg")`,
