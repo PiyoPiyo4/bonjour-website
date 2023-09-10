@@ -1,13 +1,14 @@
 import {React, useRef} from 'react';
 import styles from './styles/VideoSlideCSS.module.css'
 import Flickity from 'react-flickity-component'
-import VideoPlayer from './VideoPlayer';
+// import VideoPlayer from './VideoPlayer';
+import loadable from '@loadable/component'
 // import { Button } from '@mui/material';
 // import Navbar from './Navbar.jsx';
 import Navbar from './NavBar';
 
 // import { SvgIcon } from '@mui/material';
-
+const VideoPlayer = loadable(() => import('./VideoPlayer'))
 const VideoSlide = () => {
   const flickityRef = useRef(null);
   // const [isDragging, setIsDragging] = useState(false);

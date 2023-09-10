@@ -36,6 +36,7 @@ const VideoPlayer = ({videoId}) => {
       onReady={onPlayerReady}
       onStateChange={onPlayerStateChange}
       style={{ pointerEvents: 'none', display: delayIframe ? 'block' : 'none'  }}
+      loading='lazy'
     />
   );
 }
