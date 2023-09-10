@@ -3,134 +3,154 @@ body {
   background-image: url("../../assets/bgBonjour.jpeg");
   background-size: cover;
   background-position: center;
+  font-family: 'HFBronte';
+  padding-bottom: 30px;
+}
+
+a, u {
+  text-decoration: none !important;
+  /* color: black; */
+  color: #000 !important;
 }
 
 /* main div*/
 .main-div {
-  min-height: calc(100vh - 68px);
+  /* min-height: calc(100vh - 68px); */
+  font-family: 'HFBronte';
 }
 
 /* footer */
 .footer--pin {
-  position: relative;
-  left: 0;
-  bottom: 0;
+  position:fixed;
+  left:0;
+  bottom:0;
+  right:0;
 }
 
-.container {
+/* #yolContain {
+  border: solid 2px red;
+} */
+
+#container {
     width: 300px;
     height: 300px;
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto;
+    /* border: solid 2px black; */
 }
 
-.container:hover .pic1 {
+#container:hover .pic1 {
   display: none;
 }
   
-.container:hover .pic2 {
+#container:hover .pic2 {
   display: block;
 }
 
-.container .pic {
+#container .pic {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.container .pic2 {
+#container .pic2 {
   display: none;
 }
 
-video{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+/* All Card Style */
+#cardContain{
+  max-width: 750px;
 }
 
-/* Now Streaming */
-.now-streaming {
-  text-align: center;
-  /* margin: 20px; */
-}
-
-.streaming-heading {
-  inline-size: 95%;
-  font-size: 24px;
-  color: #333;
-  overflow-wrap: break-word;
-}
-
-.streaming-list {
-  list-style: none;
-  padding: 0;
+#cardGroup{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.streaming-link {
-  display: inline-flex;
-  align-items: center;
-  padding: 10px 20px;
+#cardItem{
+  /* margin: 15px; */
+  background-color: transparent;
+  border: none;
+  flex: 0 0 30%;
+}
+
+#cardImage {
+  width: 200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#cardTitle {
+  font-weight: bolder;
   font-size: 18px;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-  background-color: #1db954;
-  width: 90%;
 }
 
-.streaming-link.spotify {
-  background-color: #1db954;
+#mainDropdown {
+  
 }
 
-.streaming-link.apple-music {
-  background-color: #ff3b30;
+#dropdownToggle {
+  font-weight: bolder;
+  background-color: #e3c9c3;
+  border-color: #d1aead;
+  color: #000;
 }
 
-.streaming-link.youtube-music {
-  background-color: #ff0000;
+#dropdownMenu {
+  background-color: #e3c9c3;
+  border-color: #d1aead;
+  font-weight: bold;
 }
 
-.streaming-link:hover {
-  background-color: #333;
+/* Card Style */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
 }
 
-.streaming-icon {
-  margin-right: 8px;
+.card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
 }
 
 /*Mobilee*/
 @media(max-width: 768px) {
-  .streaming-link{
-    width: 85%;
+  #cardItem {
+    flex: 0 0 50%; 
   }
-  .MV{
-    width: 90%;
+  #cardImage {
+    width: 150px;
+  }
+  #cardTitle {
+    font-size: 16px;
+  }
+  .footer--pin{
+    font-size: 12px;
   }
 }
 
-@media (max-height: 1000px) {
+/* @media (max-height: 1000px) {
   .main-div {
     min-height: calc(100vh + 150px);
   }
-}
+} */
 
-@media (max-height: 750px) {
+/* @media (max-height: 750px) {
   .main-div {
     min-height: calc(100vh + 250px);
   }
-}
+} */
 
 @media (orientation: landscape) {
   .footer--pin{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     font-size: 12px;
   }
   .main-div {

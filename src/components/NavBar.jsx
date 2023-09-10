@@ -35,7 +35,7 @@ function Navbar(props) {
         <SocialIcon url="https://www.instagram.com/bonjour.ent/" fgColor={props.color} bgColor="transparent" target="_blank" rel="noopener noreferrer"/>
         <Button color="primary" 
           style={{ fontFamily: 'HFBronte', color: props.color, fontWeight: 'bold', fontSize: '20px' }}
-          onClick={() => navigate('/YODMG')}  
+          onClick={() => navigate('/YOL')}  
         >Artists</Button>
         {/* <Button component={Link} to="/about" color="primary" style={{ fontFamily: 'HFBronte', color: props.color, fontWeight: 'bold', fontSize: '20px' }}>About</Button> */}
         {/* <Button component={Link} to="/contact" color="primary" style={{ fontFamily: 'HFBronte', color: props.color, fontWeight: 'bold' }}>Contact</Button> */}
