@@ -58,96 +58,12 @@ a, u {
   display: none;
 }
 
-/* All Card Style */
-#cardContain{
-  max-width: 750px;
-}
-
-#cardGroup{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-#cardItem{
-  /* margin: 15px; */
-  background-color: transparent;
-  border: none;
-  flex: 0 0 30%;
-}
-
-#cardImage {
-  width: 200px;
-  height: 100%;
-  margin: 0 auto;
-}
-
-#cardTitle {
-  font-weight: bolder;
-  font-size: 18px;
-}
-
-#mainDropdown {
-  
-}
-
-#dropdownToggle {
-  font-weight: bolder;
-  background-color: #e3c9c3;
-  border-color: #d1aead;
-  color: #000;
-}
-
-#dropdownMenu {
-  background-color: #e3c9c3;
-  border-color: #d1aead;
-  font-weight: bold;
-}
-
-/* Card Style */
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  border: 1px solid #ddd;
-  padding: 10px;
-  text-align: center;
-}
-
 /*Mobilee*/
 @media(max-width: 768px) {
-  #cardItem {
-    flex: 0 0 50%; 
-  }
-  #cardImage {
-    width: 150px;
-  }
-  #cardTitle {
-    font-size: 16px;
-  }
   .footer--pin{
     font-size: 12px;
   }
 }
-
-/* @media (max-height: 1000px) {
-  .main-div {
-    min-height: calc(100vh + 150px);
-  }
-} */
-
-/* @media (max-height: 750px) {
-  .main-div {
-    min-height: calc(100vh + 250px);
-  }
-} */
 
 @media (orientation: landscape) {
   .footer--pin{

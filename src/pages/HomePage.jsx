@@ -1,15 +1,13 @@
 import React from 'react';
-// import Navbar from '../components/Navbar';
-import VideoSlide from '../components/VideoSlide';
+import loadable from '@loadable/component'
 import '../fonts/fonts.css';
 import './styles/MainPageCSS.css'
 
+const VideoSlide = loadable(() => import('../components/VideoSlide'))
 const HomePage = () => {
   return (<>
   <div>
-    {/* <Navbar className={styles.box}/> */}
     <VideoSlide/>
-    {/* <h1> Bonjour </h1> */}
     <footer style={{
       position: 'fixed',
       bottom: 0,
@@ -19,10 +17,6 @@ const HomePage = () => {
       color: 'white',
       fontFamily: 'HFBronte',
       overflow: 'hidden',
-      // display: 'flex',
-      // justifyContent: 'center',
-      // alignItems: 'center',
-      // padding: '10px 0',
       fontSize: '14px',
       
       // Mobile styles
