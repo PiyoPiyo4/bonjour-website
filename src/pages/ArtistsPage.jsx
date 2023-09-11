@@ -37,9 +37,9 @@ const AristsPage = () => {
           <a href="https://www.tiktok.com/@yolmusic" target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faTiktok} fontSize='30px'/> </a>
           <a href="https://www.youtube.com/@ThisIsYolid" target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faYoutube} fontSize='30px'/> </a>
         </div>
-        <h2 style={{ fontWeight: 'bolder'}}>Singles</h2>
+        <h2 style={{ fontWeight: 'bolder'}}> Singles </h2>
         <SongList cards={cards} type='singles'/>
-        <h2 style={{ fontWeight: 'bolder'}}>Albums</h2>
+        <h2 style={{ fontWeight: 'bolder'}}> Albums </h2>
         <SongList cards={cards} type='albums'/>
       </div>
     </div>

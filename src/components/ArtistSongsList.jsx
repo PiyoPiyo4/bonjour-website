@@ -6,7 +6,7 @@ import './styles/ArtistSongsListCSS.css'
 
 const AristSongsList = ({cards, type}) => {
   const icons = [faSpotify, faApple, faYoutube, faYoutube]
-  return(<>
+  return(
   <div id="cardContain">
     <CardGroup id="cardGroup" >
       {cards.map((card) => {
@@ -31,6 +31,6 @@ const AristSongsList = ({cards, type}) => {
       })}
     </CardGroup>
   </div>
-  </>)
+  )
 }
 export default AristSongsList;

@@ -1,5 +1,5 @@
 #cardContain{
-  max-width: 750px;
+  max-width: 100%;
 }
 
 #cardGroup{
@@ -15,7 +15,8 @@
   /* margin: 15px; */
   background-color: transparent;
   border: none;
-  flex: 0 0 30%;
+  /* Uncomment for 3 in a row only*/
+  /* flex: 0 0 25%; */
 }
 
 #cardImage {
@@ -49,7 +50,7 @@
 /*Mobilee*/
 @media(max-width: 768px) {
   #cardItem {
-    flex: 0 0 50%; 
+    flex: 0 0 40%; 
   }
   #cardImage {
     width: 150px;
