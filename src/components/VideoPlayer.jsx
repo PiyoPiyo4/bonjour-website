@@ -8,15 +8,15 @@ const VideoPlayer = ({videoId}) => {
   const onPlayerReady = (event) => {
     const player = event.target;
     player.playVideo();
-    // setTimeout(() => {
+    setTimeout(() => {
       setDelayIframe(true);
-    // }, 10000);
+    }, 10000);
   };
 
-  const onPlayerStateChange = (event) => {
-    const player = event.target;
-    player.playVideo();
-  };
+  // const onPlayerStateChange = (event) => {
+  //   const player = event.target;
+  //   player.playVideo();
+  // };
 
   const options = {
     playerVars: {
@@ -34,7 +34,7 @@ const VideoPlayer = ({videoId}) => {
       videoId={videoId}
       opts={options}
       onReady={onPlayerReady}
-      onStateChange={onPlayerStateChange}
+      // onStateChange={onPlayerStateChange}
       style={{ pointerEvents: 'none', display: delayIframe ? 'block' : 'none'  }}
       loading='lazy'
     />
