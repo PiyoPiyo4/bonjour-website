@@ -2,7 +2,7 @@ import React from 'react';
 import loadable from '@loadable/component'
 import logo from '../assets/BONJOUR_ORI.png'
 import background from '../assets/bgBonjour.jpeg'
-import { Container, Box, Typography, Grid, IconButton, Divider } from '@mui/material';
+import {Box, Typography, Grid } from '@mui/material';
 
 const NavBar = loadable(() => import('../components/NavBar'))
 

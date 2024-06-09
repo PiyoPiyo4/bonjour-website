@@ -2,7 +2,7 @@ import React from 'react';
 import { AppBar, Toolbar, Button, styled } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { SocialIcon } from 'react-social-icons';
-import logo from '../assets/BONJOUR_WHITE.png'
+// import logo from '../assets/BONJOUR_WHITE.png'
 import { useMediaQuery } from '@mui/material';
 
 import '../fonts/fonts.css';

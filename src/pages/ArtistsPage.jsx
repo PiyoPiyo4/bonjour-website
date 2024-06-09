@@ -1,6 +1,6 @@
 import React from 'react';
 import pic from '../assets/pic1.jpg'
-import pic2 from '../assets/pic2.jpg'
+// import pic2 from '../assets/pic2.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import loadable from '@loadable/component'
 import { faYoutube, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons'
@@ -10,7 +10,7 @@ import YolData from "../artistData/YOL.json"
 import logo from '../assets/BONJOUR_ORI.png'
 import background from '../assets/bgBonjour.jpeg'
 
-import { Container, Box, Typography, Grid, IconButton, Divider } from '@mui/material';
+import { Box, Typography, Grid, IconButton} from '@mui/material';
 
 const NavBar = loadable(() => import('../components/NavBar'))
 const SongList = loadable(() => import('../components/ArtistSongsList'))
