@@ -14,7 +14,8 @@ const AristSongsList = ({cards, type}) => {
           (<Card key={card.title} id='cardItem'>
             <Card.Img src={card.image} id='cardImage' />
             <Card.Body>
-              <Card.Title id='cardTitle'>{card.title}</Card.Title>
+             <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', textAlign: 'center' }}>
+              <Card.Title id='cardTitle' sx={{textAlign: 'center'}}>{card.title}</Card.Title>
                 <Dropdown id='mainDropdown' drop='down-centered'>
                   <Dropdown.Toggle variant="success" id="dropdownToggle" color='#d1aead'> Streams </Dropdown.Toggle>
                   <Dropdown.Menu id="dropdownMenu" >
@@ -25,6 +26,7 @@ const AristSongsList = ({cards, type}) => {
                     ))}
                   </Dropdown.Menu>
                 </Dropdown>
+              </div>
             </Card.Body>
           </Card>)
           : null

@@ -6,6 +6,7 @@ import loadable from '@loadable/component'
 // import { Button } from '@mui/material';
 // import Navbar from './Navbar.jsx';
 import Navbar from './NavBar';
+import logo from '../assets/BONJOUR_WHITE.png';
 
 // import { SvgIcon } from '@mui/material';
 const VideoPlayer = loadable(() => import('./VideoPlayer'))
@@ -43,7 +44,7 @@ const VideoSlide = () => {
     <div 
       className={styles.maindiv}
       >
-      <Navbar color="white"/>
+      <Navbar color="white" logo={logo}/>
       <Flickity
       flickityRef={(c) => (flickityRef.current = c)}
       className={styles.carousel}
@@ -62,7 +63,7 @@ const VideoSlide = () => {
             <VideoPlayer videoId='12zWZsSzo2E' className= {styles.carouselCell} />
           </div>
         </div>
-        <div 
+        {/* <div 
           style={{ 
             backgroundImage: `url("https://i.ytimg.com/vi/RBnvCgOg0js/maxresdefault.jpg")`,
           }} 
@@ -71,7 +72,7 @@ const VideoSlide = () => {
           <div className={styles.videoContainer}>
             <VideoPlayer videoId='RBnvCgOg0js' />
           </div>
-        </div>
+        </div> */}
         <div
           style={{ 
             backgroundImage: `url("https://i.ytimg.com/vi/wJnh407njNw/maxresdefault.jpg")`,

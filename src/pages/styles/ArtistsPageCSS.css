@@ -1,10 +1,15 @@
 /*body to put background*/
-body {
+/* body {
   background-image: url("../../assets/bgBonjour.jpeg");
   background-size: cover;
   background-position: center;
-  font-family: 'HFBronte';
   padding-bottom: 30px;
+} */
+
+.background-image{
+  background-image: url("../../assets/bgBonjour.jpeg") !important;
+  background-size: cover;
+  background-position: center;
 }
 
 a, u {
@@ -16,7 +21,7 @@ a, u {
 /* main div*/
 .main-div {
   /* min-height: calc(100vh - 68px); */
-  font-family: 'HFBronte';
+  font-family: 'Kanit', sans-serif;
 }
 
 /* footer */

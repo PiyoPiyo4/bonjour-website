@@ -15,7 +15,6 @@ const HomePage = () => {
       width: '100%',
       backgroundColor: 'transparent',
       color: 'white',
-      fontFamily: 'HFBronte',
       overflow: 'hidden',
       fontSize: '14px',
       

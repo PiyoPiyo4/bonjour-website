@@ -7,50 +7,73 @@ import { faYoutube, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-i
 import '../fonts/fonts.css';
 import './styles/ArtistsPageCSS.css'
 import YolData from "../artistData/YOL.json"
+import logo from '../assets/BONJOUR_ORI.png'
+import background from '../assets/bgBonjour.jpeg'
+
+import { Container, Box, Typography, Grid, IconButton, Divider } from '@mui/material';
 
 const NavBar = loadable(() => import('../components/NavBar'))
 const SongList = loadable(() => import('../components/ArtistSongsList'))
 const cards = YolData
 
 const AristsPage = () => {
-
-  return (<>
-  <div className='main-div'>
-    <NavBar color="black" bgColor="white"/>
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' , marginTop: '50px', flexWrap: 'wrap'}}>
-      <div style={{ textAlign: 'center', position: 'absolute' }} id='yolContain'>
-        <h1 style={{ fontFamily: 'HFBronte', fontWeight: '700'}}>YOL</h1>
-        <div id='container'>
-          <img
-            src={pic}
-            alt="YODMG"
-            className='pic pic1'
-          />
-          <img
-            src={pic2}
-            alt="YODMG"
-            className='pic pic2'
-          />
-        </div>
-        <div style={{ display: 'flex', justifyContent: 'space-between', width: '200px', margin: '0 auto', marginTop: '25px', marginBottom: '25px'}}>
-          <a href="https://www.instagram.com/yolmusic/" target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faInstagram} fontSize='30px'/> </a>
-          <a href="https://www.tiktok.com/@yolmusic" target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faTiktok} fontSize='30px'/> </a>
-          <a href="https://www.youtube.com/@ThisIsYolid" target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faYoutube} fontSize='30px'/> </a>
-        </div>
-        <h2 style={{ fontWeight: 'bolder'}}> Singles </h2>
-        <SongList cards={cards} type='singles'/>
-        <h2 style={{ fontWeight: 'bolder'}}> Albums </h2>
-        <SongList cards={cards} type='albums'/>
-      </div>
-    </div>
-    </div>
-    
-    <div>
-      <footer className='footer--pin'>
-        &copy; BONJOUR ENTERTAINMENT 2019
-      </footer>
-    </div>
-  </>)
+  return (<div style={{backgroundImage: `url(${background})`,
+  backgroundSize: 'cover',
+  fontFamily: "'Kanit', sans-serif",
+  display: 'flex',
+  flexDirection: 'column',}}>
+    <NavBar color="black" bgColor="white" logo={logo} />
+    <Box sx={{ flex: 1, overflowY: 'auto', marginTop: '85px' }}>
+        <Grid container spacing={2}>
+          <Grid item xs={12}>
+            <Typography variant="h1" gutterBottom textAlign='center' fontFamily='inherit'>
+              YOL
+            </Typography>
+            <Grid container justifyContent="center" spacing={1}>
+              <Box sx={{ height: '300px', width: '300px', borderRadius: '50%', overflow: 'hidden', margin: '0 auto'}}>
+                <img src={pic} alt="YOL" style={{ width: '100%', height: '100%', objectFit: 'cover'}}/>
+              </Box>
+            </Grid>
+            <Grid container justifyContent="center" spacing={2} sx={{ marginTop: 2, marginBottom: 2 }}>
+              <Grid item>
+                <IconButton href="https://www.instagram.com/yolmusic/" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faInstagram} fontSize='30px'/>
+                </IconButton>
+              </Grid>
+              <Grid item>
+                <IconButton href="https://www.tiktok.com/@yolmusic" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faTiktok} fontSize='30px'/>
+                </IconButton>
+              </Grid>
+              <Grid item>
+                <IconButton href="https://www.youtube.com/@ThisIsYolid" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faYoutube} fontSize='30px'/>
+                </IconButton>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item xs={12}>
+            <Typography variant="h2" gutterBottom textAlign='center' fontFamily='inherit'>
+              Singles
+            </Typography>
+            <SongList cards={cards} type='singles'/>
+          </Grid>
+          <Grid item xs={12}>
+            <Typography variant="h2" gutterBottom textAlign='center' fontFamily='inherit'>
+              Albums
+            </Typography>
+            <SongList cards={cards} type='albums'/>
+          </Grid>
+        </Grid>
+      </Box>
+      <Box sx={{marginTop: 'auto', // Push footer to bottom
+                padding: '1rem', // Use rem unit for spacing
+                textAlign: 'center',}}>
+        <Typography variant="body2" color="text.secondary">
+          &copy; BONJOUR ENTERTAINMENT 2019
+        </Typography>
+      </Box>
+  </div>)
 }
 
 export default AristsPage;

@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const HomePage = loadable(() => import('./pages/HomePage'))
 const AristsPage = loadable(() => import('./pages/ArtistsPage'))
+const AboutUsPage = loadable(() => import('./pages/AboutUsPage'))
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage/>}/>
           <Route path='/YOL' element={<AristsPage/> } />
+          <Route path='/about-us' element={<AboutUsPage/> } />
         </Routes>
       </BrowserRouter>
     </>
